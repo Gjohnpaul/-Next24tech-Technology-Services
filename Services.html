@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <title>Our Services</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dddfd4; /* Background color changed */
+        }
+        header {
+            background-color: #3fb0ac; /* Header background color changed */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #173e43; /* Nav background color changed */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #fae596; 
+            color: #000; 
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-4 {
+            flex: 1;
+            margin: 10px;
+            text-align: left;
+        }
+        .footer-col-1 ul,
+        .footer-col-2 p,
+        .footer-col-4 ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .footer-col-2 {
+            text-align: center;
+        }
+        .section {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center; /* Centering the content */
+        }
+        .title h1 {
+            text-emphasis: center;
+            padding-top: 50px;
+            font-size: 42px;
+            position: relative;
+            line-height: 60px;
+            color: #173e43; /* Title color changed */
+            margin-bottom: 20px; /* Added margin bottom for spacing */
+        }
+        .title h1::after {
+            content: "";
+            background: #3fb0ac; /* Title underline color changed */
+            width: 236px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card .icon {
+            font-size: 24px;
+            color: #3fb0ac; /* Icon color changed */
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #000; /* Text color changed */
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card .button {
+            display: inline-block;
+            background: #173e43; /* Button background color changed */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .card .button:hover {
+            background: #3fb0ac; /* Button hover color changed */
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card .icon {
+            font-size: 16px;
+            color: #3fb0ac; /* Icon color changed */
+        }
+        .card h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #000; /* Text color changed */
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card .button {
+            display: inline-block;
+            background: #173e43; /* Button background color changed */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .card .button:hover {
+            background: #3fb0ac; /* Button hover color changed */
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card .icon {
+            font-size: 24px;
+            color: #3fb0ac; /* Icon color changed */
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #000; /* Text color changed */
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card .button {
+            display: inline-block;
+            background: #173e43; /* Button background color changed */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .card .button:hover {
+            background: #3fb0ac; /* Button hover color changed */
+        }
+        /* Center the content in the "Another Service" column */
+.card {
+  text-align: center;
+}
+
+/* Adjust margin and padding for better spacing */
+.card {
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+
+/* Adjust button margin */
+.card .button {
+  margin-top: 20px;
+}
+
+        .footer p {
+            margin: 0;
+        }
+        /* Center the copyright text */
+        .copyright {
+            text-align: center;
+        }
+
+        /* Additional CSS for the footer */
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+
+        .footer p {
+            color: #8a8a8a;
+        }
+
+        .footer h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 12%;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .app-logo {
+            margin-top: 20px;
+        }
+        .app-logo img {
+            width: 140px;
+        }
+
+        .footer hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        .menu-icon {
+            width: 28px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        @media only screen and (max-width: 800px) {
+            nav ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #333;
+                width: 100%;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+            nav ul li {
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                color: #fff;
+            }
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        .footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+.footer-col-1,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the content */
+}
+
+.footer-col-1 ul,
+.footer-col-4 ul {
+  margin-left: auto; /* Align the list items to the right */
+  padding-left: 0;
+  text-align: center; /* Center the list items */
+}
+
+.footer-col-1 li,
+.footer-col-4 li {
+  display: inline-block; /* Display list items inline */
+  margin: 0 10px; /* Add some spacing between list items */
+}
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the columns horizontally */
+  align-items: center; /* Center the columns vertically */
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Embrak Innovations</h1>
+        
+        <div class="footer-col-2">
+            <div class="logo-container">
+              <img src="C:\Users\HP\Desktop\Embrak Innovations\logo.jpeg" alt="RedStore" width="105px" />
+            </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="section">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="service">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <h2>WE ARE COMMITTED TO BRINGING YOU EXCELLENCE</h2>
+                <p>At Embark Innovations – we put our customers at the heart of our business. We’re committed to providing our customers with reliable, innovative chemical program management solutions that increase treatment accuracy and reduce field service costs.
+
+                    Above all else, our customers are our number one priority.</p>
+                <a href="https://www.embarkinnovations.com/team/" class="button">Read more</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <h2>MISSION STATEMENT</h2>
+                <p>We deliver solutions that increase treatment accuracy of production chemical programs.</p>
+                <a href="https://www.embarkinnovations.com/team/" class="button">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fas fa-calendar"></i>
+        </div>
+        <h2>VISION STATEMENT</h2>
+        <p>Embark will deliver innovative solutions that leverage enterprise data and provide actionable intelligence to the field to reduce costs.</p>
+        <a href="https://www.embarkinnovations.com/team/" class="button">Read more</a>
+    </div>
+</div>
+</div>
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-calendar"></i>
+    </div>
+    <h2>VALUE STATEMENT
+    </h2>
+    <p>Our promise to our clients is that we will always deliver far more in program value and cost reduction than we ever charge</p>
+    <a href="https://www.embarkinnovations.com/team/" class="button">Read more</a>
+</div>
+</div>
+</div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-col-1">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li> <!-- Corrected spelling of "Portfolio" -->
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <div class="logo-container">
+                    <img src="C:\Users\HP\Desktop\Embrak Innovations\logo.jpeg" alt="RedStore" width="105px" /> <!-- Make sure to replace "path/to/your/logo.jpeg" with the correct path or URL -->
+                </div>
+                <p>"At Embrak Innovations, we guarantee quality solutions for businesses, offering a money-back guarantee if your team doesn't utilize our services, no questions asked."</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li> <!-- Add your Facebook link -->
+                    <li><a href="#">Twitter</a></li> <!-- Add your Twitter link -->
+                    <li><a href="#">Instagram</a></li> <!-- Add your Instagram link -->
+                    <li><a href="#">YouTube</a></li> <!-- Add your YouTube link -->
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright © 2024 Embrak Innovations. All rights reserved.</p>
+    </div>
+    
+    <script>
+        // Function to adjust footer position
+        function adjustFooter() {
+            var footer = document.querySelector('.footer');
+            var bodyHeight = document.body.clientHeight;
+            var windowHeight = window.innerHeight;
+            var footerHeight = footer.offsetHeight;
+    
+            // If body height is less than window height, adjust footer position
+            if (bodyHeight < windowHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = '0';
+            } else {
+                footer.style.position = 'static';
+            }
+        }
+    
+        // Call adjustFooter initially and on window resize
+        adjustFooter();
+        window.addEventListener('resize', adjustFooter);
+    </script>
+    </body>
+    </html>
+    

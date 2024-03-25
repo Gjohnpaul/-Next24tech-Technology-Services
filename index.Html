@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Embrak Innovations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="C:\Users\HP\Desktop\Embrak Innovations\logo.jpeg" alt="RedStore" width="125px" /></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Protfolio.html">Protfolio</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>Digital Solutions for Specialty Chemical Programs</h1>
+        <p>Embark Innovations provides technology platforms specifically designed for <br> specialty chemical vendors to increase field efficiency and highlight program value.</p>
+        <a href="Services.html" rel="noopener noreferrer" class="btn">Services &#8594;</a>
+      </div>
+      <div class="col-2">
+        <img src="C:\Users\HP\Desktop\Embrak Innovations\EMBRAK.JPG" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .col-3 img {
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <h1>Data Management</h1>
+        <img src="C:\Users\HP\Desktop\Embrak Innovations\image.jpeg" alt="" />
+        <a href="Data Anayticles.html" rel="noopener noreferrer" class="btn">Read More &#8594;</a>
+      </div>
+      <div class="col-3">
+        <h1>Optimization Platform</h1>
+        <img src="C:\Users\HP\Desktop\Embrak Innovations\logo1.jpg" alt="" /><br>
+        <a href="OptimizationPlatform.html" rel="noopener noreferrer" class="btn">Read More &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .col-3 {
+    text-align: center;
+    margin-left: 20px;
+  }
+</style>
+
+<div class="center-container">
+  <div class="col-3">
+    <h1>Prodesy Reporting</h1>
+    <img src="C:\Users\HP\Desktop\Embrak Innovations\logo2.jpg" alt="" style="width: 450px; height: auto;" /><br>
+    <a href="ProdesyReporting.html" rel="noopener noreferrer" class="btn">Read More &#8594;</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">     
+      <div class="footer-col-1">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Protfolio.html">Protfolio</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col-2">
+        <div class="logo-container">
+          <img src="C:\Users\HP\Desktop\Embrak Innovations\logo.jpeg" alt="RedStore" width="105px" />
+        </div>
+        <p>"At Embark Innovations, we guarantee quality solutions for businesses, offering a money-back guarantee if your team doesn't utilize our services, no questions asked."</p>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </div>
+    <p class="copyright">Copyright © 2019 Embark S.L. All rights reserved.</p>
+  </div>
+</div>
+
+
+<style>
+  .footer {
+    text-align: center;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+
+  .footer-col-3 ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-col-3 ul li {
+    margin-bottom: 5px;
+  }
+</style>
+<!-- js for toggle menu -->
+<script>
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
+</script>
+</body>
+</html>
